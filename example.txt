@@ -1,0 +1,34 @@
+# ============================================================
+# AZZA TRADER — XAUUSD Signal Bot
+# Salin file ini menjadi .env lalu isi nilainya
+# cp .env.example .env
+# ============================================================
+
+# --- Telegram ---
+# Dapatkan token dari @BotFather di Telegram
+TELEGRAM_BOT_TOKEN=1234567890:8929375653:AAEno7SrV_4KMgLQ2iwKsvfHjY5wiAjSzgQ
+
+# ID chat/channel tujuan sinyal (prefix -100 untuk channel)
+# Cara cek: kirim pesan ke bot, lalu buka https://api.telegram.org/bot<TOKEN>/getUpdates
+TELEGRAM_CHAT_ID=-5182282329
+
+# --- OpenRouter AI (Dianjurkan) ---
+# Dapatkan API key GRATIS di https://openrouter.ai/keys
+# Digunakan untuk /tanya (Q&A AI) dan ringkasan berita /news
+# Jika kosong, bot pakai jawaban bawaan (FAQ lokal)
+OPENROUTER_API_KEY=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
+# --- Ollama (Opsional) ---
+# URL server Ollama kamu. Kosongkan jika tidak ada (bot pakai analisis bawaan)
+# Contoh lokal: http://localhost:11434
+# Contoh remote: http://123.123.123.123:11434
+OLLAMA_URL=
+
+# --- Server ---
+PORT=5000
+NODE_ENV=production
+
+# --- Session (isi dengan string random panjang) ---
+SESSION_SECRET=ganti_dengan_string_random_minimal_32_karakter_ini
+
+# --- Database (jika pakai PostgreSQL) ---
+# DATABASE_URL=postgresql://user:password@host:5432/dbname
